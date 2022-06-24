@@ -4,10 +4,10 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class JTest1 {
+public class ChromeSessionTest {
 
     @Test
-    public void chromeSession() {
+    public void testChromeSession() {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.navigate().to("http://seleniumsimplified.com");
