@@ -4,15 +4,15 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class ChromeSessionTest {
+public class BookSeleniumTest {
 
     @Test
-    public void testChromeSession() {
+    public void givenTitleWhenAddThenValidate() {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.navigate().to("http://seleniumsimplified.com");
         Assert.assertTrue("title should start differently",
-        driver.getTitle().startsWith("Selenium Simplified"));
+                driver.getTitle().startsWith("Selenium Simplified"));
         driver.close();
         driver.quit();
     }
